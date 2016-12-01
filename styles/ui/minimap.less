@@ -1,0 +1,30 @@
+atom-text-editor::shadow {
+  atom-text-editor-minimap {
+    &:not([stand-alone]) {
+      flex: 0 0 10vw;
+    }
+
+    &::shadow {
+      .minimap-visible-area {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.minimap {
+  .highlight-selected {
+    background: hsl(183, 100%, 50%);
+  }
+
+  .selected {
+    background: hsl(61, 100%, 50%);
+  }
+}
+
+.minimap-selection {
+  .cursor-line,
+  .region {
+    background: rgba(0, 194, 255, 0.57);
+  }
+}

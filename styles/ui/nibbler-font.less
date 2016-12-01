@@ -1,0 +1,33 @@
+.source,
+.text {
+  &.js,
+  &.json,
+  &.html,
+  &.handlebars,
+  &.css,
+  &.less,
+  &.yaml, {
+    font-family: Hasklig;
+
+    .comment.block {
+      font-family: Hasklig;
+    }
+
+    .keyword {
+      &.operator,
+      &.bitwise {
+        font-family: FiraCode-Retina;
+      }
+    }
+
+    .meta {
+      &.selector {
+        font-family: FiraCode-Retina;
+      }
+    }
+
+    .punctuation {
+      // font-family: FiraCode-Retina;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import 'minimap';
+
+* {
+  @import 'nibbler-font';
+  @import 'font-features';
+}
+
+:root,
+atom-panel,
+atom-workspace {
+  // font-family: -apple-system, SFUIDisplay-Light;
+  // font-family: -apple-system, SFUIDisplay-Light, BlinkMacSystemFont, sans-serif;
+  // font-family: SFUIDisplay-Light;
+  // font-family: BlinkMacSystemFont;
+}
+
+.header {
+  @bgcolor: transparent;
+
+  .title-bar {
+    background-color: @bgcolor;
+    color: @syntax-text-color;
+
+    .is-blurred & {
+      color: fade(@syntax-text-color, 25%);
+    }
+  }
+}
+
+
+:host(.editor) {
+  @import (reference) '../syntax-variables';
+  @import '../syntax/less';
+  @import 'gutter';
+  @import 'bracket-matcher';
+}

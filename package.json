@@ -1,0 +1,15 @@
+{
+  "name": "nibbler-theme-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Nibblonian Syntax",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/nibbler-theme-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

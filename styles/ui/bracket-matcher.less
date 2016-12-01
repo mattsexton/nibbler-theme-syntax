@@ -1,0 +1,21 @@
+.highlights {
+  .highlight {
+    &.bracket-matcher {
+      .region {
+        background-color: @light-gray;
+        animation    : 333ms linear 0s infinite alternate throb;
+        transition: transform 333ms;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+@keyframes throb {
+  0% {
+    transform       : rotateX(90deg) translateX(10%);
+  }
+
+  100% {
+    transform       : rotateX(-90deg) translateX(-10%);
+  }
+}
