@@ -5,16 +5,16 @@
   @import 'font-features';
 }
 
-:root,
-atom-panel,
-atom-workspace {
-  // font-family: -apple-system, SFUIDisplay-Light;
-  // font-family: -apple-system, SFUIDisplay-Light, BlinkMacSystemFont, sans-serif;
-  // font-family: SFUIDisplay-Light;
-  // font-family: BlinkMacSystemFont;
-}
+// :root,
+// atom-panel,
+// atom-workspace {
+//   // font-family: -apple-system, SFUIDisplay-Light;
+//   // font-family: -apple-system, SFUIDisplay-Light, BlinkMacSystemFont, sans-serif;
+//   // font-family: SFUIDisplay-Light;
+//   // font-family: BlinkMacSystemFont;
+// }
 
-.header {
+.syntax--header {
   @bgcolor: transparent;
 
   .title-bar {
@@ -28,7 +28,7 @@ atom-workspace {
 }
 
 
-:host(.editor) {
+atom-text-editor.editor {
   @import (reference) '../syntax-variables';
   @import '../syntax/less';
   @import 'gutter';
