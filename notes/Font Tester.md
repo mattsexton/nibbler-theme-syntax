@@ -33,7 +33,7 @@ ui ff fi fl ffi ffl ft db qp cp
 {{#*inline "myPartial"}}My Content{{/inline}}
 ```
 
-// ```js
+```js
 (>>=) :: (Num a) => a -> a -> a
 a /= b ++ a <- c << [1..2] -<<
 a == w === b <- rng -< ()
@@ -67,4 +67,4 @@ ui ff fi fl ffi ffl ft db qp cp
 {{#each test}}{{#if .}}{{@index}}{{else}}{{@root}}{{/if}}{{/each}}
 {{#> myPartial }}Failover content{{/myPartial}}
 {{#*inline "myPartial"}}My Content{{/inline}}
-// ```
+```

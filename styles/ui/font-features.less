@@ -1,91 +1,94 @@
-font-weight            : 300!important;
-text-rendering         : optimizeLegibility!important;
-font-kerning           : normal!important;
+* {
+  // font-weight            : 300!important;
+  text-rendering         : optimizeLegibility!important;
+  // font-kerning           : normal!important;
 
--webkit-font-smoothing : subpixel-antialiased!important;
+  // -webkit-font-smoothing : antialiased!important;
+  -webkit-font-smoothing : subpixel-antialiased!important;
 
-font-feature-settings+ : 'liga' 2;
-font-feature-settings+ : 'rlig' 2;
-font-feature-settings+ : 'clig' 2;
-font-feature-settings+ : 'dlig' 2;
-font-feature-settings+ : 'hlig' 2;
-font-feature-settings+ : 'kern' 2;
-font-feature-settings+ : 'swsh' 2;
-font-feature-settings+ : 'cswh' 2;
-font-feature-settings+ : 'ccmp' 2;
-font-feature-settings+ : 'mgrk' 2;
-font-feature-settings+ : 'calt' 2;
-font-feature-settings+ : 'case' 0;
-font-feature-settings+ : 'ornm' 2;
-font-feature-settings+ : 'fwid' 2;
-font-feature-settings+ : 'tnum' 2;
-font-feature-settings+ : 'zero' 2; // slashed zero
-font-feature-settings+ : 'salt' 0; // stylistic alternates (breaks ligatures)
+  font-feature-settings+ : 'liga' 2;
+  font-feature-settings+ : 'rlig' 2;
+  font-feature-settings+ : 'clig' 2;
+  font-feature-settings+ : 'dlig' 2;
+  font-feature-settings+ : 'hlig' 2;
+  font-feature-settings+ : 'kern' 2;
+  font-feature-settings+ : 'swsh' 2;
+  font-feature-settings+ : 'cswh' 2;
+  font-feature-settings+ : 'ccmp' 2;
+  font-feature-settings+ : 'mgrk' 2;
+  font-feature-settings+ : 'calt' 2;
+  font-feature-settings+ : 'case' 0;
+  font-feature-settings+ : 'ornm' 2;
+  font-feature-settings+ : 'fwid' 2;
+  font-feature-settings+ : 'tnum' 2;
+  font-feature-settings+ : 'zero' 2; // slashed zero
+  font-feature-settings+ : 'salt' 0; // stylistic alternates (breaks ligatures)
 
-font-feature-settings+ : 'cv01' 1; // simple 'a'
-font-feature-settings+ : 'cv02' 1; // simple 'g'
-font-feature-settings+ : 'cv04' 1; // serifed 'i'
-font-feature-settings+ : 'cv06' 1; // Sami uppercase Eng -> Ŋ
-font-feature-settings+ : 'cv07' 0; // cursive beta -> β
-font-feature-settings+ : 'cv08' 0; // cursive theta -> θ
-font-feature-settings+ : 'cv09' 0; // cursive phi -> φ
-font-feature-settings+ : 'cv10' 1; // Serbian be -> б
-font-feature-settings+ : 'cv11' 0; // Cyrillic breve -> ˘ (not sure)
-font-feature-settings+ : 'cv12' 1; // slashed zero
-font-feature-settings+ : 'cv13' 1; // unused
-font-feature-settings+ : 'cv14' 0; // typographic hyphen (break ligatures)
-font-feature-settings+ : 'cv15' 0; // typographic asterisk (break ligatures)
-font-feature-settings+ : 'cv16' 1; // slashed dollar sign
+  font-feature-settings+ : 'cv01' 1; // simple 'a'
+  font-feature-settings+ : 'cv02' 1; // simple 'g'
+  font-feature-settings+ : 'cv04' 1; // serifed 'i'
+  font-feature-settings+ : 'cv06' 1; // Sami uppercase Eng -> Ŋ
+  font-feature-settings+ : 'cv07' 0; // cursive beta -> β
+  font-feature-settings+ : 'cv08' 0; // cursive theta -> θ
+  font-feature-settings+ : 'cv09' 0; // cursive phi -> φ
+  font-feature-settings+ : 'cv10' 1; // Serbian be -> б
+  font-feature-settings+ : 'cv11' 0; // Cyrillic breve -> ˘ (not sure)
+  font-feature-settings+ : 'cv12' 1; // slashed zero
+  font-feature-settings+ : 'cv13' 1; // unused
+  font-feature-settings+ : 'cv14' 0; // typographic hyphen (break ligatures)
+  font-feature-settings+ : 'cv15' 0; // typographic asterisk (break ligatures)
+  font-feature-settings+ : 'cv16' 1; // slashed dollar sign
 
-font-feature-settings+ : 'ss01' 0; // typographic alternates [-,*] (break ligatures)
-font-feature-settings+ : 'ss02' 0; // simple a, cursive beta \03B2
-font-feature-settings+ : 'ss03' 0; // simple g, cursive theta, Serbian be
-font-feature-settings+ : 'ss04' 1; // serifed 'i'
-font-feature-settings+ : 'ss05' 0; // alternate Sami uppercase Eng, cursive phi
-font-feature-settings+ : 'ss06' 1; // slashed dollar sign $
-font-feature-settings+ : 'ss14' 1; // slashed dollar sign $
+  font-feature-settings+ : 'ss01' 0; // typographic alternates [-,*] (break ligatures)
+  font-feature-settings+ : 'ss02' 0; // simple a, cursive beta \03B2
+  font-feature-settings+ : 'ss03' 0; // simple g, cursive theta, Serbian be
+  font-feature-settings+ : 'ss04' 1; // serifed 'i'
+  font-feature-settings+ : 'ss05' 0; // alternate Sami uppercase Eng, cursive phi
+  font-feature-settings+ : 'ss06' 1; // slashed dollar sign $
+  font-feature-settings+ : 'ss14' 1; // slashed dollar sign $
 
-font-feature-settings+_: !important;
-
-// -webkit-font-feature-settings+: 'liga' 2;
-// -webkit-font-feature-settings+: 'rlig' 2;
-// -webkit-font-feature-settings+: 'clig' 2;
-// -webkit-font-feature-settings+: 'dlig' 2;
-// -webkit-font-feature-settings+: 'hlig' 2;
-// -webkit-font-feature-settings+: 'kern' 2;
-// -webkit-font-feature-settings+: 'swsh' 2;
-// -webkit-font-feature-settings+: 'cswh' 2;
-// -webkit-font-feature-settings+: 'ccmp' 2;
-// -webkit-font-feature-settings+: 'mgrk' 2;
-// -webkit-font-feature-settings+: 'calt' 2;
-// -webkit-font-feature-settings+: 'case' 0;
-// -webkit-font-feature-settings+: 'ornm' 2;
-// -webkit-font-feature-settings+: 'fwid' 2;
-// -webkit-font-feature-settings+: 'tnum' 2;
-// -webkit-font-feature-settings+: 'zero' 2; // slashed zero
-// -webkit-font-feature-settings+: 'salt' 0; // stylistic alternates (breaks ligatures)
-//
-// -webkit-font-feature-settings+: 'cv01' 1; // simple 'a'
-// -webkit-font-feature-settings+: 'cv02' 1; // simple 'g'
-// -webkit-font-feature-settings+: 'cv04' 1; // serifed 'i'
-// -webkit-font-feature-settings+: 'cv06' 1; // Sami uppercase Eng -> Ŋ
-// -webkit-font-feature-settings+: 'cv07' 0; // cursive beta -> β
-// -webkit-font-feature-settings+: 'cv08' 0; // cursive theta -> θ
-// -webkit-font-feature-settings+: 'cv09' 0; // cursive phi -> φ
-// -webkit-font-feature-settings+: 'cv10' 1; // Serbian be -> б
-// -webkit-font-feature-settings+: 'cv11' 0; // Cyrillic breve -> ˘ (not sure)
-// -webkit-font-feature-settings+: 'cv12' 1; // slashed zero
-// -webkit-font-feature-settings+: 'cv13' 1; // unused
-// -webkit-font-feature-settings+: 'cv14' 0; // typographic hyphen (break ligatures)
-// -webkit-font-feature-settings+: 'cv15' 0; // typographic asterisk (break ligatures)
-// -webkit-font-feature-settings+: 'cv16' 1; // slashed dollar sign
-//
-// -webkit-font-feature-settings+: 'ss01' 0; // typographic alternates [-,*]
-// -webkit-font-feature-settings+: 'ss02' 0; // simple a, cursive beta \03B2
-// -webkit-font-feature-settings+: 'ss03' 0; // simple g, cursive theta, Serbian be
-// -webkit-font-feature-settings+: 'ss04' 1; // serifed 'i'
-// -webkit-font-feature-settings+: 'ss05' 0; // alternate Sami uppercase Eng, cursive phi
-// -webkit-font-feature-settings+: 'ss06' 1; // slashed dollar sign
-// -webkit-font-feature-settings+: 'ss14' 1; // slashed dollar sign
-//
-// -webkit-font-feature-settings+_: !important;
+  // font-feature-settings+_: !important;
+  //
+  // // -webkit-font-feature-settings+: 'liga' 2;
+  // // -webkit-font-feature-settings+: 'rlig' 2;
+  // // -webkit-font-feature-settings+: 'clig' 2;
+  // // -webkit-font-feature-settings+: 'dlig' 2;
+  // // -webkit-font-feature-settings+: 'hlig' 2;
+  // // -webkit-font-feature-settings+: 'kern' 2;
+  // // -webkit-font-feature-settings+: 'swsh' 2;
+  // // -webkit-font-feature-settings+: 'cswh' 2;
+  // // -webkit-font-feature-settings+: 'ccmp' 2;
+  // // -webkit-font-feature-settings+: 'mgrk' 2;
+  // // -webkit-font-feature-settings+: 'calt' 2;
+  // // -webkit-font-feature-settings+: 'case' 0;
+  // // -webkit-font-feature-settings+: 'ornm' 2;
+  // // -webkit-font-feature-settings+: 'fwid' 2;
+  // // -webkit-font-feature-settings+: 'tnum' 2;
+  // // -webkit-font-feature-settings+: 'zero' 2; // slashed zero
+  // // -webkit-font-feature-settings+: 'salt' 0; // stylistic alternates (breaks ligatures)
+  // //
+  // // -webkit-font-feature-settings+: 'cv01' 1; // simple 'a'
+  // // -webkit-font-feature-settings+: 'cv02' 1; // simple 'g'
+  // // -webkit-font-feature-settings+: 'cv04' 1; // serifed 'i'
+  // // -webkit-font-feature-settings+: 'cv06' 1; // Sami uppercase Eng -> Ŋ
+  // // -webkit-font-feature-settings+: 'cv07' 0; // cursive beta -> β
+  // // -webkit-font-feature-settings+: 'cv08' 0; // cursive theta -> θ
+  // // -webkit-font-feature-settings+: 'cv09' 0; // cursive phi -> φ
+  // // -webkit-font-feature-settings+: 'cv10' 1; // Serbian be -> б
+  // // -webkit-font-feature-settings+: 'cv11' 0; // Cyrillic breve -> ˘ (not sure)
+  // // -webkit-font-feature-settings+: 'cv12' 1; // slashed zero
+  // // -webkit-font-feature-settings+: 'cv13' 1; // unused
+  // // -webkit-font-feature-settings+: 'cv14' 0; // typographic hyphen (break ligatures)
+  // // -webkit-font-feature-settings+: 'cv15' 0; // typographic asterisk (break ligatures)
+  // // -webkit-font-feature-settings+: 'cv16' 1; // slashed dollar sign
+  // //
+  // // -webkit-font-feature-settings+: 'ss01' 0; // typographic alternates [-,*]
+  // // -webkit-font-feature-settings+: 'ss02' 0; // simple a, cursive beta \03B2
+  // // -webkit-font-feature-settings+: 'ss03' 0; // simple g, cursive theta, Serbian be
+  // // -webkit-font-feature-settings+: 'ss04' 1; // serifed 'i'
+  // // -webkit-font-feature-settings+: 'ss05' 0; // alternate Sami uppercase Eng, cursive phi
+  // // -webkit-font-feature-settings+: 'ss06' 1; // slashed dollar sign
+  // // -webkit-font-feature-settings+: 'ss14' 1; // slashed dollar sign
+  // //
+  // // -webkit-font-feature-settings+_: !important;
+}

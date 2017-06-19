@@ -1,0 +1,19 @@
+.syntax--ts, .syntax--tsx {
+  &.syntax--block.syntax--definition {
+    color: white;
+  }
+
+  &.syntax--readwrite,
+  &.syntax--constant {
+    color: @syntax-color-constant;
+  }
+
+  &.syntax--decorator {
+    > .syntax--punctuation:first-child,
+    > .syntax--function,
+    > .syntax--variable
+    {
+      color: orange;
+    }
+  }
+}
