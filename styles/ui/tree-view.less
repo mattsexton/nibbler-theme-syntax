@@ -1,31 +1,39 @@
 .tree-view {
-  font-size: 14px;
+  @padding: 8px;
+
+  font-size: 13px;
 
   .list-tree.has-collapsable-children {
     .list-nested-item {
       > .list-tree,
       > .list-group {
         > li {
-          padding-left: 6px;
+          padding-left: @padding;
         }
 
         .icon {
           &::before {
-            font-size: 16px;
-            margin-right: 8px;
+            font-size: 1.1rem;
+            margin-right: @padding;
           }
         }
       }
     }
 
     .list-nested-item {
-      > .list-item::before {
-        margin-right: 6px;
+      > .list-tree {
+        margin-left: @padding;
+      }
+
+      > .list-item {
+        &::before {
+          margin-right: @padding;
+        }
       }
     }
 
     li.list-item {
-      margin-left: 18px;
+      margin-left: 0;
 
       &:not(.status-ignored) {
         color: rgba(255, 255, 255, 0.85);
