@@ -1,0 +1,41 @@
+.tree-view {
+  font-size: 14px;
+
+  .amu-panel-contrast & {
+    background-color: #404659;
+  }
+
+  .entry {
+    &:not(.status-ignored) {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .list-tree.has-collapsable-children {
+    .list-nested-item {
+      > .list-tree,
+      > .list-group {
+        > li {
+          padding-left: 6px;
+        }
+
+        .icon {
+          &::before {
+            font-size: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .list-nested-item {
+      > .list-item::before {
+        margin-right: 6px;
+      }
+    }
+
+    li.list-item {
+      margin-left: 18px;
+    }
+  }
+}
