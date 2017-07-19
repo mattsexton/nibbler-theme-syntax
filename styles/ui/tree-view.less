@@ -35,7 +35,7 @@
     li.list-item {
       margin-left: 0;
 
-      &:not(.status-ignored) {
+      &:not(.status-ignored):not(.status-modified):not(.status-added) {
         color: rgba(255, 255, 255, 0.85);
       }
     }
