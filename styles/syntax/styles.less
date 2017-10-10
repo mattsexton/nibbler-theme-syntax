@@ -1,0 +1,37 @@
+.syntax--css,
+.syntax--less,
+.syntax--scss {
+  .syntax--class {
+    color: @orange;
+  }
+
+  .syntax--id {
+    color: rgb(104, 137, 254);
+  }
+
+  .syntax--keyword.syntax--control {
+    &.syntax--logical {
+      color: @light-orange;
+    }
+
+    &.syntax--html.syntax--elements {
+      color: @syntax-color-tag;
+    }
+  }
+
+  .syntax--variable > .syntax--support.syntax--constant {
+    color: @syntax-color-variable;
+  }
+}
+
+.syntax--scss {
+  &.syntax--meta {
+    &.syntax--extend {
+      > .syntax--scss:not(.syntax--control) {
+        color: @syntax-color-import;
+      }
+
+      color: @syntax-color-import;
+    }
+  }
+}

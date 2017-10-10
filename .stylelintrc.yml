@@ -1,0 +1,16 @@
+rules:
+  at-rule-no-unknown: null
+  block-closing-brace-newline-before: always
+  block-opening-brace-newline-after: always
+  declaration-no-important: true
+  function-parentheses-newline-inside: null
+  max-nesting-depth: 6
+  unit-whitelist:
+    - "%"
+    - deg
+    - ms
+    - px
+    - s
+    - vh
+    - vw
+  value-list-max-empty-lines: 1

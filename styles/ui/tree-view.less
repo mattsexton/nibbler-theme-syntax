@@ -18,26 +18,38 @@
           }
         }
       }
-    }
 
-    .list-nested-item {
       > .list-tree {
-        margin-left: @padding;
+        margin-left: @padding * 2;
       }
 
-      > .list-item {
+      .list-item {
+        margin-left: 0;
+        color: @syntax-text-color;
+
         &::before {
           margin-right: @padding / 2;
+        }
+
+        &.syntax--header {
+          margin-left: -8px;
         }
       }
     }
 
-    li.list-item {
-      margin-left: 0;
+    .status-ignored > .list-item,
+    .status-ignored.list-item {
+      color: @gray;
+    }
 
-      &:not(.status-ignored):not(.status-modified):not(.status-added) {
-        color: rgba(255, 255, 255, 0.85);
-      }
+    .status-modified > .list-item,
+    .status-modified.list-item {
+      color: @syntax-color-modified;
+    }
+
+    .status-added > .list-item,
+    .status-added.list-item {
+      color: @syntax-color-added;
     }
   }
 }

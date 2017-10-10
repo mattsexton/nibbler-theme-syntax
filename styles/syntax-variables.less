@@ -9,6 +9,7 @@
 @syntax-cursor-color: white;
 @syntax-selection-color: lighten(@dark-gray, 10%);
 @syntax-background-color: rgb(64, 70, 90);
+@syntax-comment-color: lighten(@very-dark-gray, 10%);
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
@@ -20,10 +21,12 @@
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
+// @syntax-gutter-text-color: @very-light-gray;
+@syntax-gutter-text-color: fade(@syntax-text-color, 40%);
 @syntax-gutter-text-color-selected: @orange;
 @syntax-gutter-background-color: @syntax-background-color;
-@syntax-gutter-background-color-selected: @gray;
+// @syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
@@ -38,7 +41,8 @@
 @syntax-color-value: #d29b67;
 @syntax-color-function: #61aeef;
 @syntax-color-method: @syntax-color-function;
-@syntax-color-class: #e5c17c;
+// @syntax-color-class: #e5c17c;
+@syntax-color-class: @orange;
 @syntax-color-keyword: rgb(166, 87, 204);
 @syntax-color-tag: rgb(55, 223, 147);
 @syntax-color-attribute: #d2762c;// #87400d;
